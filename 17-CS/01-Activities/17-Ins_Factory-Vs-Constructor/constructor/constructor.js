@@ -51,6 +51,9 @@ class Dryer extends Appliance {
     }
 }
 
+const wPool = new Dryer("Ahhhhhh!")
+wPool.dry();
+wPool.makeNoise();
 // This should all look familiar because this is a part of object-oriented programming.
 // We are using class inheritance to use methods from parent classes.
 // This is not an incorrect way to design a system but let's ask ourselves:
