@@ -1,9 +1,20 @@
-// function to block the stack for x number of milliseconds
-const pause = milliSeconds => {
-  // get the current time
-  var startTime = new Date().getTime(); 
-  // block stack until time's up
-  while (new Date().getTime() < startTime + milliSeconds); 
+const button = document.getElementById("button");
+
+const pause =(delay)=>{
+  setTimeout(()=>{
+    console.log("button was clicked")
+    // button.style.display="block"
+    button.setAttribute("disabled",false)
+  },delay)
 }
 
-pause(8000);
+
+button.addEventListener("click", (e)=>{
+  e.preventDefault();
+  button.setAttribute("disabled",true)
+  pause(8000);
+})
+
+
+
+

@@ -14,6 +14,9 @@ function outer() {
     }, 0);
     // 1) logs first since it heads straight to the call stack 
     console.log("Yes, I'm listening");
+    setTimeout(() => {
+      console.log("Really?")
+    }, 0);
   }
 
   inner();
@@ -28,3 +31,12 @@ outer();
 // I like turtles
 // Are you listening?
 // Hello world
+
+// setTimeout(()=>{
+//   console.log('1')
+// },[2000])
+// setTimeout(()=>{
+//   console.log('1')
+// },[3000])
+
+// console.log(setTimeout)

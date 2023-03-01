@@ -2,8 +2,12 @@
 // 1) greeting is stored in the global execution context
 const greeting = 'Hello';
 
+// globalContext =[showDocAlert, waitForAlertClickButton,sayHello, console.log("first alert"),secondAlert, waitForAlertClickButton, console.log(greetings)]
+
 // 2) sayHello is stored in the global execution context
 function sayHello(name) {
+  console.log("first alert done!")
+  alert("second alert?");
   // 5) Once the sayHello execution context is created, "Gabby" is assigned to name
   // 6) salutation is stored in the function execution context of sayHello. It is assigned the string, 'how are you?'
   const salutation = 'how are you?';

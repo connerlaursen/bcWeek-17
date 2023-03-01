@@ -1,9 +1,9 @@
+// LIFO
 class Stack {
   // default value allows stack to initialize without an argument
   constructor(container = []) {
     this.container = container;
   }
-
   // adds an element to the top of the stack
   addToStack(el) {
     return this.container.push(el);

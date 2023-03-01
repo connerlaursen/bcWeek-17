@@ -8,10 +8,12 @@ describe("Stack class", () => {
   
   test("can instantiate a new stack with an empty array", () => {
     const stack = new Stack();
+    console.log(stack)
     expect(stack).toEqual({ container: [] });
   });
 
   test("can instantiate a new stack with an array", () => {
+    console.log(stack)
     expect(stack).toEqual({ container: [1, 2, 3, 4] });
   });
 

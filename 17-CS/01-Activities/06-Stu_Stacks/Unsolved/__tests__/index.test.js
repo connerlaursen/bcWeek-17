@@ -8,21 +8,21 @@ describe("Stack class", () => {
   
   test("Can instantiate a new stack with an empty array", () => {
     const stack = new Stack();
-    expect(stack).toEqual({ container: [] });
+    expect(stack).toEqual({ stackContainer: [] });
   });
 
   test("Can instantiate a new queue with an empty argument", () => {
-    expect(stack).toEqual({ container: [1, 2, 3, 4] });
+    expect(stack).toEqual({ stackContainer: [1, 2, 3, 4] });
   });
 
   test("Can add a new element to the top of the stack", () => {
-    stack.addToStack(newItem);
-    expect(stack).toEqual({ container: [1, 2, 3, 4, 5] });
+    stack.add(newItem);
+    expect(stack).toEqual({ stackContainer: [1, 2, 3, 4, 5] });
   });
 
   test("Can remove items from the top of the stack", () => {
-    const val = stack.removeFromStack();
+    const val = stack.remove();
     expect(val).toEqual(5);
-    expect(stack).toEqual({ container: [1, 2, 3, 4] });
+    expect(stack).toEqual({ stackContainer: [1, 2, 3, 4] });
   });
 });

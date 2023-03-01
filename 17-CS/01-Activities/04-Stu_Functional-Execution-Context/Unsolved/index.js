@@ -1,4 +1,5 @@
 // returns the average value of an array of numbers
+
 function avg(array) {
   function sum() {
     let total = 0;

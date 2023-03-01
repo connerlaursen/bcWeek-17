@@ -1,16 +1,14 @@
 // create the Stack class with two methods to remove and add an element
 class Stack {
-  constructor(container = []) {
-    this.container = container;
-  }
-
-  addToStack(el) {
-    return this.container.push(el);
-  }
-
-  removeFromStack() {
-    return this.container.pop();
-  }
+    constructor(stackContainer=[]){
+        this.stackContainer = stackContainer;
+    }
+    add(value){
+        return this.stackContainer.push(value)
+    }
+    remove(){
+        return this.stackContainer.pop()
+    }
 }
 
 module.exports = Stack;
